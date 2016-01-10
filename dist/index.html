@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lagou UI React</title>
+    <link rel="stylesheet" href="bundle.css">
+</head>
+<body>
+    <div class="doc-header">
+        <div class="container">
+            <h1>Lagou UI React</h1>
+            <p>
+                Lago UI React是拉勾网基于React/ES6+/Webpack开发的组件库，
+                <br> 兼容Chrome/Firefox/IE8+等浏览器。
+            </p>
+            <a class="fa fa-github fa-2x github-link" href="https://github.com/Lagou-Frontend/lagouui-react" target="_blank">
+            </a>
+        </div>
+    </div>
+    <div class="doc-content">
+        <div class="container clear-fix">
+            <div class="doc-sections">
+                <section id="buttonDemo">
+                    <h1>Button</h1>
+                    <h2>预定义样式</h2>
+                    <div id="buttonStyleDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Button&gt;</span>Default<span class="nt">&lt;/Button&gt;</span>
+<span class="nt">&lt;Button</span> <span class="na">lgStyle=</span><span class="s">&quot;primary&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/Button&gt;</span>
+<span class="nt">&lt;Button</span> <span class="na">lgStyle=</span><span class="s">&quot;link&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/Button&gt;</span></pre></div>
+
+                    <h2>预定义尺寸</h2>
+                    <div id="buttonSizeDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Button</span> <span class="na">lgSize=</span><span class="s">&quot;sm&quot;</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/Button&gt;</span>
+<span class="nt">&lt;Button&gt;</span>Normal<span class="nt">&lt;/Button&gt;</span>
+<span class="nt">&lt;Button</span> <span class="na">lgSize=</span><span class="s">&quot;lg&quot;</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/Button&gt;</span></pre></div>
+                    <h2>禁用</h2>
+                    <div id="buttonDisabledDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Button</span> <span class="na">disabled</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/Button&gt;</span>
+<span class="nt">&lt;Button</span> <span class="na">lgStyle=</span><span class="s">&quot;primary&quot;</span> <span class="na">disabled</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/Button&gt;</span>
+<span class="nt">&lt;Button</span> <span class="na">lgStyle=</span><span class="s">&quot;link&quot;</span> <span class="na">disabled</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/Button&gt;</span></pre></div>
+                    <h2>块级按钮</h2>
+                    <div id="buttonBlockDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Button</span> <span class="na">lgStyle=</span><span class="s">&quot;primary&quot;</span> <span class="na">block</span><span class="nt">&gt;</span>Block<span class="nt">&lt;/Button&gt;</span></pre></div>
+                </section>
+                <section id="textboxDemo">
+                    <h1>Textbox</h1>
+                    <p>对不支持HTML5 <code>placeholder</code> 属性的IE9-浏览器进行了兼容</p>
+                    <h2>预定义样式</h2>
+                    <div id="textboxStyleDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Textbox</span> <span class="na">placeholder=</span><span class="s">&quot;Default&quot;</span><span class="nt">&gt;&lt;/Textbox&gt;</span>
+<span class="nt">&lt;Textbox</span> <span class="na">placeholder=</span><span class="s">&quot;Primry&quot;</span> <span class="na">lgStyle=</span><span class="s">&quot;primary&quot;</span><span class="nt">&gt;&lt;/Textbox&gt;</span></pre></div>
+                    <h2>禁用</h2>
+                    <div id="textboxDisabledDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Textbox</span> <span class="na">placeholder=</span><span class="s">&quot;Disabeld&quot;</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/Textbox&gt;</span></pre></div>
+                </section>
+                <section id="textareaDemo">
+                    <h1>Textarea</h1>
+                    <p>对不支持HTML5 <code>placeholder</code> 属性的IE9-浏览器进行了兼容</p>
+                    <h2>预定义样式</h2>
+                    <div id="textareaStyleDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Textarea</span> <span class="na">placeholder=</span><span class="s">&quot;Default&quot;</span><span class="nt">&gt;&lt;/Textarea&gt;</span>
+<span class="nt">&lt;Textarea</span> <span class="na">placeholder=</span><span class="s">&quot;Primry&quot;</span> <span class="na">lgStyle=</span><span class="s">&quot;primary&quot;</span><span class="nt">&gt;&lt;/Textarea&gt;</span></pre></div>
+                    <h2>输入自适应高度</h2>
+                    <div id="textareaAutoSizeDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Textarea</span> <span class="na">placeholder=</span><span class="s">&quot;Auto Size&quot;</span> <span class="na">autoSize</span><span class="nt">&gt;&lt;/Textarea&gt;</span>
+<span class="nt">&lt;Textarea</span> <span class="na">placeholder=</span><span class="s">&quot;Setting rows and maxRows&quot;</span> <span class="na">autoSize</span> <span class="na">rows=</span><span class="s">&quot;5&quot;</span> <span class="na">maxRows=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;&lt;/Textarea&gt;</span></pre></div>
+                    <h2>禁用</h2>
+                    <div id="textareaDisabledDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Textarea</span> <span class="na">placeholder=</span><span class="s">&quot;Disabled&quot;</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/Textarea&gt;</span></pre></div>
+                </section>
+                <section id="checkboxDemo">
+                    <h1>Checkbox</h1>
+                    <h2>预定义样式</h2>
+                    <div id="checkboxStyleDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Checkbox</span> <span class="na">label=</span><span class="s">&quot;Unchecked&quot;</span><span class="nt">&gt;&lt;/Checkbox&gt;</span>
+<span class="nt">&lt;Checkbox</span> <span class="na">label=</span><span class="s">&quot;Checked&quot;</span> <span class="na">defautlChecked</span><span class="nt">&gt;&lt;/Checkbox&gt;</span></pre></div>
+                    <h2>禁用</h2>
+                    <div id="checkboxDisabledDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Checkbox</span> <span class="na">label=</span><span class="s">&quot;Disabled&quot;</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/Checkbox&gt;</span>
+<span class="nt">&lt;Checkbox</span> <span class="na">label=</span><span class="s">&quot;Disabled&quot;</span> <span class="na">defautlChecked</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/Checkbox&gt;</span></pre></div>
+                </section>
+                <section id="radioDemo">
+                    <h1>Radio</h1>
+                    <h2>预定义样式</h2>
+                    <div id="radioStyleDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;RadioGroup</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">defaultValue=</span><span class="s">&quot;male&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Radio</span> <span class="na">value=</span><span class="s">&quot;male&quot;</span> <span class="na">label=</span><span class="s">&quot;Male&quot;</span><span class="nt">&gt;&lt;/Radio&gt;</span>
+    <span class="nt">&lt;Radio</span> <span class="na">value=</span><span class="s">&quot;female&quot;</span> <span class="na">label=</span><span class="s">&quot;Female&quot;</span><span class="nt">&gt;&lt;/Radio&gt;</span>
+<span class="nt">&lt;/RadioGroup&gt;</span></pre></div>
+                    <h2>禁用</h2>
+                    <div id="radioDisabledDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;RadioGroup</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">defaultValue=</span><span class="s">&quot;male&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Radio</span> <span class="na">value=</span><span class="s">&quot;male&quot;</span> <span class="na">label=</span><span class="s">&quot;Male&quot;</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/Radio&gt;</span>
+    <span class="nt">&lt;Radio</span> <span class="na">value=</span><span class="s">&quot;female&quot;</span> <span class="na">label=</span><span class="s">&quot;Female&quot;</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/Radio&gt;</span>
+<span class="nt">&lt;/RadioGroup&gt;</span></pre></div>
+                </section>
+                <section id="selectDemo">
+                    <h1>Select</h1>
+                    <h2>单选</h2>
+                    <div id="singleSelectDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Select</span> <span class="na">placeholder=</span><span class="s">&quot;Select...&quot;</span> <span class="na">options=</span><span class="p">{[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]}</span><span class="nt">&gt;&lt;/Select&gt;</span>
+<span class="nt">&lt;Select</span> <span class="na">placeholder=</span><span class="s">&quot;Select...&quot;</span> <span class="na">options=</span><span class="p">{[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]}</span> <span class="na">defaultValue=</span><span class="s">&quot;Monday&quot;</span><span class="nt">&gt;&lt;/Select&gt;</span></pre></div>
+                    <h2>多选</h2>
+                    <div id="multipleSelectDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Select</span> <span class="na">multiple</span> <span class="na">placeholder=</span><span class="s">&quot;Select...&quot;</span> <span class="na">options=</span><span class="p">{[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]}</span><span class="nt">&gt;&lt;/Select&gt;</span>
+<span class="nt">&lt;Select</span> <span class="na">multiple</span> <span class="na">placeholder=</span><span class="s">&quot;Select...&quot;</span> <span class="na">options=</span><span class="p">{[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]}</span> <span class="na">defaultValue=</span><span class="p">{[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span>]}</span><span class="nt">&gt;&lt;/Select&gt;</span></pre></div>
+                    <h2>禁用</h2>
+                    <div id="selectDisabledDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Select</span> <span class="na">placeholder=</span><span class="s">&quot;Select...&quot;</span> <span class="na">options=</span><span class="p">{[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]}</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/Select&gt;</span>
+<span class="nt">&lt;Select</span> <span class="na">multiple</span> <span class="na">placeholder=</span><span class="s">&quot;Select...&quot;</span> <span class="na">options=</span><span class="p">{[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">]}</span> <span class="na">defaultValue=</span><span class="p">{[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span>]}</span> <span class="na">disabled</span><span class="nt">&gt;&lt;/Select&gt;</span></pre></div>
+                </section>
+                <section id="avatarDemo">
+                    <h1>Avatar</h1>
+                    <h2>预定义样式</h2>
+                    <div id="avatarStyleDemo" class="demo"></div>
+<div class="highlight"><pre><span class="nt">&lt;Avatar</span> <span class="na">src=</span><span class="s">&quot;http://www.lagou.com/images/jd_portrait.png&quot;</span><span class="nt">&gt;&lt;/Avatar&gt;</span>
+<span class="nt">&lt;Avatar</span> <span class="na">text=</span><span class="s">&quot;H&quot;</span> <span class="na">color=</span><span class="s">&quot;#ff8590&quot;</span><span class="nt">&gt;&lt;/Avatar&gt;</span></pre></div>
+                </section>
+            </div>
+            <nav class="doc-sidebar">
+                <ul>
+                    <li data-target="#buttonDemo">Button</li>
+                    <li data-target="#textboxDemo">Textbox</li>
+                    <li data-target="#textareaDemo">Textarea</li>
+                    <li data-target="#checkboxDemo">Checkbox</li>
+                    <li data-target="#radioDemo">Radio</li>
+                    <li data-target="#selectDemo">Select</li>
+                    <li data-target="#avatarDemo">Avatar</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <footer>
+        <span class="written">Written by</span>
+        <span class="writer">Lagou FED</span>
+    </footer>
+    <i class="fa fa-arrow-circle-up fa-4x return-top"></i>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>

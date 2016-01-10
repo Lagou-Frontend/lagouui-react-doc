@@ -1,0 +1,193 @@
+a {
+    color: #00b38a;
+}
+
+code {
+    padding: 2px 4px;
+    border-radius: 3px;
+    background-color: #f9f2f4;
+    font-size: 90%;
+    color: #c7254e;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.doc-content {
+    margin-bottom: 40px;
+}
+
+.doc-header {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    background-color: #00b38a;
+    font-size: 24px;
+    text-align: left;
+    color: #fff;
+}
+
+.doc-header h1 {
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.doc-header p {
+    font-size: 24px;
+}
+
+.github-link {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    display: inline-block;
+    color: #fff;
+}
+
+.github-link:hover {
+    color: #fff;
+}
+
+.doc-sections {
+    width: 75%;
+    float: left;
+}
+
+.doc-sections section {
+    margin-bottom: 60px;
+}
+
+.doc-sections section h1 {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.doc-sections section h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.demo {
+    position: relative;
+    padding: 45px 15px 15px;
+    border-top: 1px solid #e1e1e8;
+    border-left: 1px solid #e1e1e8;
+    border-right: 1px solid #e1e1e8;
+    border-radius: 4px 4px 0 0;
+}
+
+.demo:after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "Demo:";
+}
+
+.demo-container > * {
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.demo-container > button {
+    vertical-align: bottom;
+}
+
+.demo-container > * > * {
+    margin-right: 10px;
+}
+
+.highlight {
+    padding: 9px 14px;
+    border: 1px solid #e1e1e8;
+    border-radius: 0 0 4px 4px;
+    background-color: #f7f7f9;
+    line-height: 22px;
+}
+
+.doc-sidebar {
+    box-sizing: border-box;
+    width: 25%;
+    padding-left: 60px;
+    float: right;
+}
+
+.doc-sidebar li {
+    display: block;
+    padding: 4px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #999;
+    cursor: pointer;
+}
+
+.doc-sidebar .active {
+    padding-left: 18px;
+    border-left: 2px solid #00b38a;
+    color: #00b38a;
+}
+
+.doc-sidebar-fixed {
+    position: fixed;
+    top: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.written {
+    color: #bbb;
+}
+
+.writer {
+    color: #00b38a;
+}
+
+.return-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    border-radius: 64px;
+    color: #00b38a;
+    cursor: pointer;
+}
+
+.return-top:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
